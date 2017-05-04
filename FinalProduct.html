@@ -45,7 +45,7 @@ input[type="radio"] {
 <br/><input type="submit" id="changeYear" onclick="enter('submitButton', 'confirmYearChange()')" value="Change"/>
 <br/><br/><b> Change your character: </b>
 <br/> (click the character you want)
-<br/> (if it doesn't work, reclick the animal you want)
+<br/> (if it doesn't work, answer a question. It will change the character then)
 <br/><input type="radio" value="0" id="char1" name="character" onclick="confirmChange(0)" checked><label for="char1"><img src="./Images/owl.png"/></label>
 <input type="radio" value="1" id="char2" name="character" onclick="confirmChange(1)"><label for="char2"><img src="./Images/pig.png"/></label>
 <input type="radio" value="2" id="char3" name="character" onclick="confirmChange(2)"><label for="char3"><img src="./Images/penguin.png"/></label>
@@ -260,7 +260,6 @@ function newGame() {
     x = 200;
     correct = 0;
     total = 0;
-    draw(0);
     draw(0);
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     document.getElementById("feedback").innerHTML = "";
